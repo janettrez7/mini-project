@@ -1,0 +1,41 @@
+
+<style>
+
+    .button {
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    
+    .button1 {background-color: #4CAF50;
+        margin-top: 13px;} /* Green */
+    .new_div{
+        border:2px solid green;
+        background: #7db0c19c;
+    }
+    
+</style>
+<div class="new_div">
+<div class=" container my-3">
+    <h4>Add a Todo</h4>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="title">Todo Title</label>
+            <input type="text" [(ngModel)]="title" class="form-control" name="title" id="title" aria-describedby="emailHelp" placeholder="title">
+            
+        </div>
+        <div class="form-group">
+            <label for="desc">Description</label>
+            <input type="text" class="form-control"name="desc" id="desc"  [(ngModel)]="desc">
+        </div>
+        
+        <button  type="submit" class="button1">Add Todo</button>
+    </form>
+</div>
+</div>

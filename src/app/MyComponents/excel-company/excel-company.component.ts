@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {Com}
+import { Component } from '@angular/core';
+
 @Component({
   selector: 'app-excel-company',
   templateUrl: './excel-company.component.html',

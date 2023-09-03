@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as XLSX from 'xlsx'
 
 @Component({
   selector: 'app-root',
@@ -6,10 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'cwh-todo-list';
+  title = 'GetPlaced!';
   constructor(){
-    // setTimeout(() => {
-    //   this.title = "changed title";
-    // }, 2000);
+    
   }
 }

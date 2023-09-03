@@ -8,21 +8,23 @@ import { TodoItemsComponent } from './MyComponents/todo-items/todo-items.compone
 import { AddTodoComponent } from './MyComponents/add-todo/add-todo.component';
 import { FormsModule } from '@angular/forms';
 import { AboutComponent } from './MyComponents/about/about.component';
-
+import { CompaniesComponent } from './MyComponents/companies/companies.component';
+import {MyService} from 'src/app/my-service.service';
 @NgModule({
   declarations: [
     AppComponent,
     TodosComponent,
     TodoItemsComponent,
     AddTodoComponent,
-    AboutComponent
+    AboutComponent,
+    CompaniesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [MyService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

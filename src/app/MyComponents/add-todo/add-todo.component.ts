@@ -9,7 +9,9 @@ import { Todo } from 'src/app/Todo';
 export class AddTodoComponent {
 
   "title": string;
-  "desc": string
+  "desc": string;
+  "venue":string;
+  "time":string;
   @Output() "todoAdd": EventEmitter<Todo> = new EventEmitter();
 
   constructor() {}
@@ -22,6 +24,8 @@ export class AddTodoComponent {
       sno:8,
       title: this.title,
       desc: this.desc,
+      time: this.time,
+      venue: this.venue,
       active: true
     }
     this.todoAdd.emit(todo);

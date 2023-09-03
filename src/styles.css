@@ -2,10 +2,7 @@
 body
 {
     
-    background-image: url("assets/image.jpg");
-    margin: 0;
-    padding: 0;
-    background-size: cover;
-    background-attachment: fixed;
+    background: rgb(196, 250, 135);
+    
     
 }

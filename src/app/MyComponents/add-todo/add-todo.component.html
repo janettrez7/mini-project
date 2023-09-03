@@ -12,30 +12,49 @@
       margin: 4px 2px;
       cursor: pointer;
     }
+    h3{
+        text-align: center;
+    }
     
-    .button1 {background-color: #4CAF50;
-        margin-top: 13px;} /* Green */
+    .button1 {background-color: #011402;
+        margin-top: 13px;
+        margin-left:40%;
+        color:white;
+        text-align: center;
+    } /* Green */
     .new_div{
-        border:2px solid green;
-        background: #7db0c19c;
+        border:3px solid black;
+        background:rgb(227, 153, 96);
+        margin-right:25%;
+        margin-left:30%; 
+        margin-top: 5px;
+        
+    }
+    .form-group{
+        padding:4px;
     }
     
 </style>
+<h3>Upcoming Events !</h3>
 <div class="new_div">
 <div class=" container my-3">
-    <h4>Add a Todo</h4>
+    <h4>Add an event</h4>
     <form (ngSubmit)="onSubmit()">
         <div class="form-group">
-            <label for="title">Todo Title</label>
-            <input type="text" [(ngModel)]="title" class="form-control" name="title" id="title" aria-describedby="emailHelp" placeholder="title">
+            <input type="text" [(ngModel)]="title" class="form-control" name="title" id="title" aria-describedby="emailHelp" placeholder=" Event title">
             
         </div>
         <div class="form-group">
-            <label for="desc">Description</label>
-            <input type="text" class="form-control"name="desc" id="desc"  [(ngModel)]="desc">
+            <input type="text" class="form-control"name="time" id="time" placeholder="Date & Time" [(ngModel)]="time">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control"name="venue" placeholder="Venue" id="venue"  [(ngModel)]="venue">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control"name="desc" placeholder="Description" id="desc"  [(ngModel)]="desc">
         </div>
         
-        <button  type="submit" class="button1">Add Todo</button>
+        <button  type="submit" class="btn btn-sm button1">Add Event</button>
     </form>
 </div>
 </div>

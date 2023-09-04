@@ -10,6 +10,8 @@ import { FormsModule } from '@angular/forms';
 import { AboutComponent } from './MyComponents/about/about.component';
 import { CompaniesComponent } from './MyComponents/companies/companies.component';
 import {MyService} from 'src/app/my-service.service';
+import { StudyComponent } from './MyComponents/study/study.component';
+import { ContactComponent } from './MyComponents/contact/contact.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +19,9 @@ import {MyService} from 'src/app/my-service.service';
     TodoItemsComponent,
     AddTodoComponent,
     AboutComponent,
-    CompaniesComponent
+    CompaniesComponent,
+    StudyComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
